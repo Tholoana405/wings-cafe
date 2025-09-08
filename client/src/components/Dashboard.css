@@ -1,0 +1,75 @@
+.dashboard-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Top row 3 cards */
+.card-grid.top-row .card {
+  flex: 1 1 calc(33.33% - 10px); /* 3 cards in a row */
+}
+
+/* Bottom row 2 cards */
+.card-grid.bottom-row .card {
+  flex: 1 1 calc(50% - 10px); /* 2 cards in a row */
+}
+
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.card.blue { background-color: #3b82f6; }
+.card.green { background-color:  #3b82f6; }
+.card.red { background-color: #3b82f6; }
+.card.yellow { background-color: #3b82f6;}
+.card.purple { background-color: #3b82f6; }
+.card.red-light { background-color: #3b82f6; color: #b91c1c; }
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Sales table */
+.sales-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.sales-table th, .sales-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.sales-table th {
+  background-color: #f3f3f3;
+}
+
+.sales-table tr:hover {
+  background-color: #f9f9f9;
+}

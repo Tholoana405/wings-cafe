@@ -1,0 +1,166 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full viewport height */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f4f7fa;
+  color: #333;
+}
+
+/* Header and Navbar - Compact Dashboard Style */
+header {
+  background-color: #032968; /* Dark blue */
+  color: white;
+  padding: 15px 20px; /* reduced padding for compact look */
+  border-radius: 8px;
+  margin-bottom: 15px; /* slightly smaller spacing below header */
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  margin-bottom: 8px; /* smaller spacing below title */
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+nav ul li {
+  margin-right: 12px; /* reduced spacing between nav items */
+  padding: 6px 12px; /* smaller clickable area but still comfortable */
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.95rem; /* slightly smaller font */
+  transition: background 0.3s, color 0.3s;
+}
+
+nav ul li:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+nav ul li.active {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+  color: #032968; /* make active text stand out */
+}
+
+
+/* Main content */
+main {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1; /* fills remaining space to push footer down */
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dashboard Cards */
+.cards {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #e0f3ff;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 200px;
+  text-align: center;
+  font-weight: bold;
+  color: #509cff;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #053c95;
+  color: white;
+  cursor: pointer;
+  margin: 5px 0;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #2294ff;
+}
+
+.add-btn {
+display: inline-block;  /* ensures button only takes content width */
+  width: auto;            /* override any inherited width */
+  max-width: 200px;       /* optional: limit maximum width */
+  padding: 6px 12px;      /* control height & padding */
+  font-size: 0.9rem;
+  background-color: #053c95;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-align: center;     /* center text inside button */
+}
+
+.add-btn:hover {
+  background-color: #2294ff;
+}
+
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: #fff;
+  background-color: #053c95;
+  padding: 1rem;
+  margin-top: 20px;
+}

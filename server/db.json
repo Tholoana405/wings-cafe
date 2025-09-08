@@ -1,0 +1,37 @@
+{
+  "products": [
+    {
+      "name": "Cappuccino",
+      "description": "Hot coffee",
+      "category": "Beverage",
+      "price": 25,
+      "quantity": 10,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Blueberry Muffin",
+      "description": "Freshly baked",
+      "category": "Food",
+      "price": 15,
+      "quantity": 20
+    },
+    {
+      "name": "Latte",
+      "description": "Expresso with steamed milk",
+      "category": "Beverage",
+      "price": 25,
+      "quantity": 45,
+      "id": 3
+    }
+  ],
+  "transactions": [
+    {
+      "productId": 1,
+      "type": "out",
+      "quantity": 1,
+      "date": "2025-09-06T11:31:26.511Z",
+      "id": 1
+    }
+  ]
+}
